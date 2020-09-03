@@ -1,2 +1,2 @@
 # vimo-web
-Web Page For Vimo
+https://iriiiina.github.io/vimo-web/
