@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  background-color: white;
+  color: #323232;
+}
+
+header {
+  background-color: #323232;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+	border-bottom: 1px white dotted;
+}
+
+footer {
+  background-color: #323232;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  border-bottom: none;
+}
+
+.footer-icon {
+  width: 30px;
+  fill: #CFD8DC;
+	margin: 0 5px 0 5px;
+}
