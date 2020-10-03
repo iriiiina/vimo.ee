@@ -1,0 +1,104 @@
+/* GENERAL */
+
+a {
+  transition: color 0.5s;
+}
+
+a:hover {
+  border-bottom: 1px dotted #323232;
+  color: #fdcb6e;
+}
+
+section {
+  border: 1px solid black;
+  margin: 30px 10% 30px 10%;
+}
+
+/* HEADER */
+
+header a {
+  transition: color 0.5s;
+}
+
+header a:hover {
+  color: #ffeaa7;
+}
+
+#language a:hover {
+  border-bottom: 1px dotted #ffeaa7;
+}
+
+/* IN PROGRESS */
+
+/* BUY */
+
+/* NEWS */
+
+#news {
+  flex-direction: row;
+}
+
+.news {
+  width: 30%;
+}
+
+/* GALLERY */
+
+#gallery {
+  border: none;
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+.swiper-button-next {
+  display: none;
+  border: none;
+}
+
+.swiper-button-prev {
+  display: none;
+  border: none;
+}
+
+/* FEEDBACK */
+
+#feedback {
+  flex-direction: row;
+}
+
+.feedback {
+  width: 30%;
+}
+
+/* FOOTER */
+
+footer {
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: left;
+}
+
+#footer-navigation {
+  flex-direction: column;
+}
+
+footer div {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+footer a {
+  transition: color 0.5s;
+}
+
+footer a:hover {
+  color: #ffeaa7;
+}
+
+.footer-icon svg {
+  transition: fill 0.5s;
+}
+
+.footer-icon svg:hover {
+  fill: #ffeaa7;
+}
