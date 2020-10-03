@@ -45,11 +45,70 @@
   <main>
 
     <section id="buy">
-      <h2>Книга</h2>
 
-      <div id="buy-button">
-        <a href="">КУПИТЬ</a>
+      <div>
+        <img id="book-photos" src="../img/book.jpg"/>
       </div>
+
+      <div>
+        <h1>&laquo;Kontrastsed geomeetrilised kujundid&raquo;</h1>
+        <p>Интересное описание и цена</p>
+
+        <h3 onclick="showHideBookPayment()">Оплата</h3>
+        <div id="book-payment">
+          <p>Способ оплаты и счет</p>
+        </div>
+
+        <h3 onclick="showHideBookShipping()">Доставка</h3>
+        <div id="book-shipping">
+          <p>Доставка из Эстонии, сроки отправки, стоимость</p>
+        </div>
+
+        <h3 onclick="showHideBookInfo()">Техническое описание</h3>
+        <div id="book-info">
+          <p>Автор и художник: Ирина Иванова</p>
+          <p>Редактор: Никита Иванов</p>
+          <p>Язык: эстонский</p>
+          <p>Первое издание</p>
+          <p>Октябрь 2020</p>
+          <p>Формат 100х100 мм</p>
+          <p>Тираж 200 шт</p>
+          <p>Напечатано в Эстонии</p>
+        </div>
+
+        <div id="buy-button">
+          <a href="">КУПИТЬ</a>
+        </div>
+
+        <script>
+          function showHideBookPayment() {
+            var div = document.getElementById("book-payment");
+            if (div.style.display === "none") {
+              div.style.display = "block";
+            } else {
+              div.style.display = "none";
+            }
+          }
+          function showHideBookShipping() {
+            var div = document.getElementById("book-shipping");
+            if (div.style.display === "none") {
+              div.style.display = "block";
+            } else {
+              div.style.display = "none";
+            }
+          }
+          function showHideBookInfo() {
+            var div = document.getElementById("book-info");
+            if (div.style.display === "none") {
+              div.style.display = "block";
+            } else {
+              div.style.display = "none";
+            }
+          }
+        </script>
+
+      </div>
+
     </section>
 
     <section id="news">

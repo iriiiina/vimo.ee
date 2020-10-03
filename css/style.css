@@ -78,6 +78,32 @@ header a {
 
 /* BUY */
 
+#buy {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  border: none;
+  text-align: left;
+}
+
+#book-photos {
+  width: 500px;
+}
+
+#book-payment {
+  display: none;
+}
+
+#book-shipping {
+  display: none;
+}
+
+#book-info {
+  display: none;
+}
+
 #buy-button {
   margin: 50px 0 50px 0;
 }
@@ -164,7 +190,7 @@ footer {
 footer a {
   border-bottom: none;
   color: white;
-  margin: 7px;
+  margin: 16px 7px 0 7px;
 }
 
 .footer-icon svg {
