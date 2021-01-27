@@ -1,105 +1,52 @@
 /* GENERAL */
 
-a {
-  transition: color 0.5s;
-}
-
-a:hover {
-  border-bottom: 1px dotted #323232;
-  color: #fdcb6e;
-}
-
-section {
-  border: 1px solid black;
-  margin: 30px 10% 30px 10%;
+body {
+    background-image: url("../img/background-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
 }
 
 /* HEADER */
 
-header a {
-  transition: color 0.5s;
+header {
+    margin-top: 100px;
 }
 
-header a:hover {
-  color: #ffeaa7;
+/* MAIN */
+
+main {
+    width: 70%;
+    margin: 1em auto 10em auto;
+    border-radius: 0.5em;
+    background-color: rgba(0, 0, 0, .5);
 }
 
-#language a:hover {
-  border-bottom: 1px dotted #ffeaa7;
+section { 
+    margin: 1em;
 }
 
-/* IN PROGRESS */
-
-/* BUY */
-
-/* NEWS */
-
-#news {
-  flex-direction: row;
+section a:hover {
+    color: gray;
 }
 
-.news {
-  width: 30%;
+#button-shop {
+    margin: 3em 0 0 0;
 }
 
-/* GALLERY */
-
-#gallery {
-  border: none;
-  width: 100%;
-  margin: 0 0 20px 0;
+.button:hover {
+    border: gray solid 1px;
+    color: gray;
+    cursor: pointer;
 }
 
-.swiper-button-next {
-  display: none;
-  border: none;
+#info {
+    text-align: left;
 }
 
-.swiper-button-prev {
-  display: none;
-  border: none;
-}
-
-/* FEEDBACK */
-
-#feedback {
-  flex-direction: row;
-}
-
-.feedback {
-  width: 30%;
-}
-
-/* FOOTER */
-
-footer {
-  flex-direction: row;
-  align-items: flex-start;
-  text-align: left;
-}
-
-#footer-navigation {
-  flex-direction: column;
-}
-
-footer div {
-  margin-left: 40px;
-  margin-right: 40px;
-}
-
-footer a {
-  margin: 16px 0 0 0;
-  transition: color 0.5s;
-}
-
-footer a:hover {
-  color: #ffeaa7;
-}
-
-.footer-icon svg {
-  transition: fill 0.5s;
-}
-
-.footer-icon svg:hover {
-  fill: #ffeaa7;
+.social-icon svg:hover {
+    fill: gray;
 }

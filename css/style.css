@@ -4,197 +4,82 @@
 	box-sizing: border-box;
 }
 
+html, body {
+	height: 100%;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  background-color: white;
-  color: #323232;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-a {
-  color: #323232;
-  text-decoration: none;
-  border-bottom: 1px dotted #323232;
-}
-
-h2 {
-  text-align: center;
-}
-
-section {
-  text-align: center;
-  margin: 20px auto 20px auto;
+    margin: 0;
+    padding: 0;
+    background-color: #323232;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
 }
 
 /* HEADER */
 
 header {
-  background-color: #323232;
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  display: flex;
-  flex-direction: column;
+    text-align: center;
+    margin-top: 2em;
 }
 
-header a {
-  color: white;
+header img {
+    width: 300px;
 }
 
-#language {
-  color: white;
-  text-align: right;
-  padding-right: 40px;
+/* MAIN */
+
+main {
+    width: 90%;
+    margin: 1em auto 1em auto;
+    padding: 2em;
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
 }
 
-#language a {
-  margin: 0 10px 0 10px;
-  border-bottom: 1px dotted #ffeaa7;
+section a {
+    color: white;
 }
 
-#navigation {
-  margin: 20px 30px 0 0;
-  font-family: "Poiret One", cursive;
+#button-shop {
+    margin: 2em 0 2em 0;
+    text-align: center;
 }
 
-#navigation a {
-  margin: 0 10px 0 10px;
-  line-height: 30px;
-  font-size: 24px;
+.button {
+    background: none;
+    border: white solid 1px;
+    color: white;
+    padding: 1em 1.5em 1em 1.5em;
+    text-decoration: none;
+    box-shadow: none;
+    font-size: 0.7em;
 }
 
-/* IN PROGRESS */
-
-#in-progress {
-  text-align: center;
-  margin-top: 100px;
-  font-size: 40px;
+#info {
+    font-size: 0.7em;
+    text-align: center;
+    margin-top: 2em;
 }
 
-#in-progress img {
-  height: 30px;
+.social-icon {
+    text-decoration: none;
 }
 
-/* BUY */
-
-#buy {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-evenly;
-  border: none;
-  text-align: left;
-}
-
-#book-photos {
-  width: 500px;
-}
-
-#book-payment {
-  display: none;
-}
-
-#book-shipping {
-  display: none;
-}
-
-#book-info {
-  display: none;
-}
-
-#buy-button {
-  margin: 50px 0 50px 0;
-}
-
-#buy-button a {
-  font-size: larger;
-  border-radius: 10px;
-  padding: 10px 20px 10px 20px;
-  background-color: #323232;
-  color: white;
-}
-
-/* NEWS */
-
-#news {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  margin: 0 10px 20px 10px;
-  border: none;
-}
-
-.news {
-  border: 1px solid black;
-  width: 100%;
-  margin: 10px 10px 10px 10px;
-}
-
-/* GALLERY */
-
-#gallery img {
-  width: 100%;
-}
-
-.swiper-button-next, .swiper-button-prev {
-  color: white !important;
-}
-
-/* FEEDBACK */
-
-#feedback {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  margin: 0 10px 20px 10px;
-  border: none;
-}
-
-.feedback {
-  width: 100%;
-  margin: 10px 10px 10px 10px;
-}
-
-.quotation-symbol {
-  font-size: 100px;
-  line-height: 50px;
-  font-family: "Poiret One", cursive;
-}
-
-/* FOOTER */
-
-footer {
-  background-color: #323232;
-  color: white;
-  padding: 10px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-#footer-navigation {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
-footer a {
-  border-bottom: none;
-  color: white;
-  margin: 16px 7px 0 7px;
-}
-
-.footer-icon svg {
-  width: 30px;
-  fill: white;
-	margin: 0 5px 0 5px;
+.social-icon svg {
+    width: 2em;
+    margin: 0 0.5em 0 0.5em;
+    fill: white;
 }
