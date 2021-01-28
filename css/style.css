@@ -48,6 +48,9 @@ main {
     justify-content: center;
     align-items: flex-start;
     align-content: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
 }
 
 section a {
