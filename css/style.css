@@ -14,12 +14,7 @@ body {
     background-color: #323232;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     overflow-wrap: break-word;
-    /*
-    display: flex;
-    flex-direction: column;
-    */
     font-size: 16px;
     font-family: Verdana, sans-serif;
 }

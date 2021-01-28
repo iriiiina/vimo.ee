@@ -5,9 +5,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-wrap: break-word;
-    display: flex;
-    flex-direction: column;
 }
 
 /* HEADER */
