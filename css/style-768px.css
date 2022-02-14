@@ -1,23 +1,24 @@
 /* GENERAL */
 
-body {
-    background-image: url("../img/background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
+body { 
+    background: url("../img/background.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-}
+  }
 
 /* HEADER */
 
 header {
-    margin-top: 100px;
+    margin-top: 40px;
 }
 
 /* MAIN */
 
 main {
     width: 70%;
-    margin: 1em auto 10em auto;
+    margin: 1em auto 1em auto;
     border-radius: 0.5em;
     background-color: rgba(0, 0, 0, .5);
 }
