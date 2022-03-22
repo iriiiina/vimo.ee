@@ -7,6 +7,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vimo</title>
 
+  <!-- SEO -->
+  <!--<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">-->
+  <!--<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">-->
+  <!--<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">-->
+  <!--<meta name="msapplication-TileColor" content="#da532c">-->
+  <!--<meta name="theme-color" content="#FFFFFF">-->
+
+  <!--<link rel="manifest" href="manifest.json">-->
+
+  <meta name="description" content="Web page, mobile app and social media design as a service"/>
+  <meta property="og:url" content="https://vimo.ee"/>
+  <meta property="og:type" content="website"/> 
+  <meta property="og:title" content="Vimo | web page, mobile app and social media design as a service"/>
+  <meta property="og:site_name" content="Vimo"/>
+  <meta property="og:description" content="Web page, mobile app and social media design as a service"/>
+  <!--<meta property="og:image" content="img/preview.png"/>-->
+  <!--<meta property="og:image:url" content="img/preview.png"/>-->
+  <!--<meta property="og:image:secure_url" content="img/preview.png"/>-->
+  <!--<meta property="og:image:type" content="image/png"/>-->
+  <meta property="og:image:width" content="1080"/>
+  <meta property="og:image:height" content="721"/>
+  <meta property="og:locale" content="en-US"/>
+
+  <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/style-768px.css" media="screen and (min-width:768px)">
   
@@ -15,7 +39,11 @@
 <body>
 
   <header>
-    <img src="img/logo-opaque.png" alt="Vimo Logo"/>
+    <picture>
+      <source srcset="img/logo-opaque.webp" type="image/webp">
+      <source srcset="img/logo-opaque.png" type="image/png">
+      <img src="img/logo-opaque.png" loading="lazy" alt="Vimo Logo">
+    </picture>
     <p>Web page, mobile app and social media design as a service.</p>
     <p>Made By Vimo</p>
     <p>&darr;</p>
@@ -24,7 +52,11 @@
   <main>
 
     <section>
-      <img src="img/sleepconsult.png" alt="Sleep Consult Preview"/>
+      <picture>
+        <source srcset="img/sleepconsult.webp" type="image/webp">
+        <source srcset="img/sleepconsult.png" type="image/png">
+        <img src="img/sleepconsult.png" loading="lazy" alt="Sleep Consult Preview">
+      </picture>
       <h2>Sleep Consult</h2>
       <p class="url"><a href="https://sleepconsult.eu" title="Sleep Consult">sleepconsult.eu</a></p>
       <p>Landing web page and blog made on Jekyll. Responsive design and accessibility rules are implemented.</p>
@@ -32,7 +64,11 @@
     </section>
 
     <section>
-      <img src="img/riigipyhad.png" alt="Riigipühad Preview"/>
+      <picture>
+        <source srcset="img/riigipyhad.webp" type="image/webp">
+        <source srcset="img/riigipyhad.png" type="image/png">
+        <img src="img/riigipyhad.png" loading="lazy" alt="Riigipühad Preview">
+      </picture>
       <h2>Riigipühad</h2>
       <p class="url"><a href="https://vimo.ee/riigipyhad" title="Riigipühad App">vimo.ee/riigipyhad</a></p>
       <p>Android app made on Flutter, that sends notifications about Estonian public holidays, flag days and short workdays.</p>
