@@ -1,50 +1,33 @@
 /* GENERAL */
 
-body { 
-    background: url("../img/background.jpg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-
 /* HEADER */
 
-header {
-    margin-top: 40px;
+header img {
+    max-width: 200px;
+    min-height: 200px;
 }
 
 /* MAIN */
 
 main {
-    width: 70%;
-    margin: 1em auto 1em auto;
-    border-radius: 0.5em;
-    background-color: rgba(0, 0, 0, .5);
+    flex-direction: row;
+    align-items: flex-start;
 }
 
-section { 
-    margin: 1em;
+section {
+    margin: 20px;
 }
 
-section a:hover {
-    color: gray;
+.url a:hover {
+    color: #16a085;
 }
 
-#button-shop {
-    margin: 3em 0 0 0;
-}
+/* FOOTER */
 
-.button:hover {
-    border: gray solid 1px;
-    color: gray;
-    cursor: pointer;
-}
-
-#info {
-    text-align: left;
+footer a:hover {
+    color: #16a085;
 }
 
 .social-icon svg:hover {
-    fill: gray;
+    fill: #16a085;
 }
