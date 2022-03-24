@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Riigipühad App</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="img/favicon/site.webmanifest">
+        <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+		<meta name="theme-color" content="#FFFFFF">
+		<meta name="description" content="Riigipühad is a lightweight and minimalistic app, that sends you notifications about three types of holidays in Estonia"/>
+		<meta property="og:url" content="https://vimo.ee/riigipyhad"/>
+		<meta property="og:type" content="website"/> 
+		<meta property="og:title" content="Riigipühad App"/>
+		<meta property="og:site_name" content="Riigipühad App"/>
+		<meta property="og:description" content="Riigipühad is a lightweight and minimalistic app, that sends you notifications about three types of holidays in Estonia"/>
+		<meta property="og:image" content="img/preview.png"/>
+		<meta property="og:image:url" content="img/preview.png"/>
+		<meta property="og:image:secure_url" content="img/preview.png"/>
+		<meta property="og:image:type" content="image/png"/>
+		<meta property="og:image:width" content="1200"/>
+		<meta property="og:image:height" content="586"/>
+		<meta property="og:locale" content="en-US"/>
+        
+        <style>
+        *, :after, :before {
+            box-sizing: border-box;
+        }
+        html {
+            height: 100%;
+        }
+        body {
+            font-family: Verdana, sans-serif;
+            background-color: rgba(96, 163, 188, 1);
+            margin: 0px;
+        }
+        h1 {
+            font-size: 3em;  
+            font-weight: 400;          
+        }
+        h2 {
+            text-align: center;
+            color: #636e72;
+            font-size: 1.5em;
+            font-weight: 400;
+            font-style: italic;
+            max-width: 600px;
+            margin: 1em auto 2em auto;
+        }
+        h3 {
+            text-align: center;
+            color: rgba(96, 163, 188, 1);
+            font-weight: 400;
+            font-size: 2em;
+            margin: 0;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            color: white;
+        }
+        header svg {
+            fill: white;
+            width: 100px;
+            margin: 2em 0 0 0;
+        }
+        main {
+            width: 80%;
+            margin: 0px auto 50px auto;
+            padding: 20px;
+            background-color: white;
+        }
+        #play-store {
+            text-align: center;
+        }
+        #play-store img {
+            width: 200px;
+        }
+        #types {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #636e72;
+            margin: 2em 0 2em 0;
+        }
+        #types div {
+            width: 100%;
+        }
+        #screenshots {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        #screenshots img {
+            width: 50%;
+            padding: 5px;
+        }
+        #privacy-policy {
+            text-align: center;
+            font-size: 2em;
+            line-height: 3em;
+        }
+        #privacy-policy a {
+            color: #636e72;
+        }
+        footer {
+            color: white;
+            font-size: 0.8em;
+            line-height: 0.8em;
+            text-align: center;
+            padding: 3em;
+        }
+        footer a {
+            color: white;
+        }
+        @media screen and (min-width:768px) {
+            h2 {
+                margin: 3em auto 2em auto;
+            }
+            header {
+                flex-direction: row;
+            }
+            header svg {
+                margin: 3em 1em 3em 0;
+            }
+            #play-store img {
+                width: 300px;
+            }
+            #types {
+                flex-direction: row;
+                gap: 1em;
+            }
+            #types div {
+                width: 30%;
+            }
+            #screenshots {
+                flex-direction: row;
+            }
+            #screenshots img {
+                width: 20%;
+            }
+        }
+        </style>
+    
+    </head>
+    
+    <body>
+
+        <header>
+            <div>
+                <svg viewBox="0 0 77 77" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m 22.567403,36.107847 v 4.513479 H 13.540442 V 36.107847 Z M 9.0269616,45.134805 V 40.621326 H 27.080883 v 4.513479 z M 4.5134834,49.648284 V 45.134805 H 31.594366 v 4.513479 z M 0,54.161763 v -4.513479 h 36.107845 v 4.513479 z M 27.080883,31.594364 v 4.513479 H 9.0269616 v -4.513479 z m 4.51348,-4.513479 v 4.513479 H 4.5134791 v -4.513479 z m 4.513481,-4.513479 v 4.513479 H 0 v -4.513479 z m 27.080881,13.540437 v 4.513479 h -9.026961 v -4.513479 z m -13.540441,9.026958 v -4.513479 h 18.053921 v 4.513479 z m -4.51348,4.513479 v -4.513479 h 27.080884 v 4.513479 z m -4.513481,4.513479 V 49.64828 h 36.107844 v 4.513479 z m 27.080882,-22.5674 v 4.513479 H 49.648284 v -4.513479 z m 4.51348,-4.513479 v 4.513479 H 45.134801 V 27.08088 Z m 4.513481,-4.513479 V 27.08088 H 40.621322 V 22.567401 Z M 36.107845,54.161767 h 4.513479 v 9.026958 h -4.513479 z m 9.026958,13.540441 H 40.621324 V 49.648284 h 4.513479 z m 4.513479,4.513483 h -4.513479 v -27.08089 h 4.513479 z m 4.51348,4.51348 h -4.51348 V 40.621326 h 4.51348 z m -22.5674,-27.080887 h 4.513479 v 18.053924 h -4.513479 z m -4.513479,-4.513479 h 4.513479 v 27.080886 h -4.513479 z m -4.513479,-4.513479 h 4.513479 V 76.729171 H 22.567404 Z M 36.107847,13.540443 h 4.513479 v 9.026958 h -4.513479 z m 9.026958,13.540442 H 40.621326 V 9.02696 h 4.513479 z m 4.51348,4.513479 h -4.51348 V 4.513479 h 4.51348 z m 4.513479,4.513479 H 49.648285 V 0 h 4.513479 z M 31.594364,9.02696 h 4.513479 V 27.080885 H 31.594364 Z M 27.080885,4.513482 h 4.513479 V 31.594364 H 27.080885 Z M 22.567406,1e-6 h 4.513479 v 36.107842 h -4.513479 z"/>
+                    <path d="m 36.107792,40.621212 h 4.513425 v 4.513425 h -4.513425 z m 0,-9.026849 h 4.513425 v 4.513421 h -4.513425 z m -4.513428,4.513431 h 13.540271 v 4.513422 H 31.594364 Z"/>
+                  </svg>                  
+            </div>
+            <div>
+                <h1>Riigipühad</h1>
+            </div>
+        </header>
+
+        <main>
+            <h2>Riigipühad is a lightweight and minimalistic app, that sends you notifications about three types of holidays in Estonia</h2>
+
+            <section id="play-store">
+                <a href="https://play.google.com/store/apps/details?id=ee.vimo.riigipyhad" title="Google Play Store: Riigipühad">
+                    <img src="img/play-store.png" loading="lazy" alt="Google Play Store Badge"/>
+                </a>
+            </section>
+            
+            <section id="types">
+                <div>
+                    <h3>Public Holiday</h3>
+                    <p>non working day</p>
+                </div>
+                <div>
+                    <h3>Flag Day</h3>
+                    <p>the day when citizens are raising an Estonian flag on their houses</p>
+                </div>
+                <div>
+                    <h3>Short Workday</h3>
+                    <p>the day when everybody should work 3 hours less than usual</p>
+                </div>
+            </section>
+
+            <section id="screenshots">
+                <img src="img/screenshot-1.png" loading="lazy" alt="Riigipühad Screenshot">
+                <img src="img/screenshot-2.png" loading="lazy" alt="Riigipühad Screenshot">
+                <img src="img/screenshot-4.png" loading="lazy" alt="Riigipühad Screenshot">
+                <img src="img/screenshot-3.png" loading="lazy" alt="Riigipühad Screenshot">
+            </section>
+
+            <section id="privacy-policy">
+                <p><a href="privacy.html" title="Privacy Policy Of Riigipühad">Privacy Policy</a></p>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Riigipühad</p>
+            <p>Developer: Vimo FIE</p>
+            <p><a href="privacy.html" title="Privacy Policy Of Riigipühad">Privacy Policy</a></p>
+            <p><a href="mailto:vimofie@gmail.com" title="vimofie@gmail.com">vimofie@gmail.com</a></p>
+        </footer>
+
+    </body>
+</html>
