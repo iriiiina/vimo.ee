@@ -91,13 +91,34 @@ section {
     margin: 20px auto;
 }
 
-.url {
+.portfolio-url {
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
 }
 
-.url a {
-    color: #2980b9;
+.portfolio-url a {
+    text-decoration: none;
+    color: #323232;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.portfolio-url a::before {
+    content: '';
+    background-color: hsla(168, 76%, 36%, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 5px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+
+.portfolio-url a:hover::before {
+    bottom: 0;
+    height: 100%;
 }
 
 .tags {
@@ -126,9 +147,7 @@ section {
         margin: 20px;
     }
 
-    .url a:hover {
-        color: #16a085;
-    }
+
 }
 
 /* FOOTER */
