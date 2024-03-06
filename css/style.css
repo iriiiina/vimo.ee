@@ -97,7 +97,8 @@ section {
 }
 
 .url a {
-    color: #2980b9;
+    color: rgb(40, 120, 200);
+    font-weight: 500;
 }
 
 .tags {
