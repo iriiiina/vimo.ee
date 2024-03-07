@@ -5,7 +5,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vimo</title>
+  <title>Vimo | Web, mobile & social media design as a service</title>
 
   <!-- SEO -->
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
@@ -15,163 +15,182 @@
   <meta name="theme-color" content="#323232">
 
   <link rel="manifest" href="manifest.json">
+  <link rel="canonical" href="https://vimo.ee">
 
-  <meta name="description" content="Web page, mobile app and social media design as a service" />
-  <meta property="og:url" content="https://vimo.ee" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Vimo | web page, mobile app and social media design as a service" />
-  <meta property="og:site_name" content="Vimo" />
-  <meta property="og:description" content="Web page, mobile app and social media design as a service" />
-  <meta property="og:image" content="img/preview.png" />
-  <meta property="og:image:url" content="img/preview.png" />
-  <meta property="og:image:secure_url" content="img/preview.png" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:width" content="1640" />
-  <meta property="og:image:height" content="924" />
-  <meta property="og:locale" content="en-US" />
+  <meta name="description"
+    content="Vimo team will make your Web page, mobile app or social media account neat and nice">
+  <meta property="og:url" content="https://vimo.ee">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Vimo | Web, mobile & social media design as a service">
+  <meta property="og:site_name" content="Vimo">
+  <meta property="og:description"
+    content="Vimo team will make your Web page, mobile app or social media account neat and nice">
+  <meta property="og:image" content="img/preview.png">
+  <meta property="og:image:url" content="img/preview.png">
+  <meta property="og:image:secure_url" content="img/preview.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1640">
+  <meta property="og:image:height" content="924">
+  <meta property="og:locale" content="en-US">
 
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
 
   <header>
     <picture>
       <source srcset="img/logo-opaque.webp" type="image/webp">
       <source srcset="img/logo-opaque.png" type="image/png">
-      <img src="img/logo-opaque.png" width="200" height="200" loading="lazy" alt="Vimo Logo">
+      <img itemprop="primaryImageOfPage" src="img/logo-opaque.png" width="200" height="200" loading="lazy"
+        alt="Vimo Logo">
     </picture>
-    <p>Web page, mobile app and social media design as a service.</p>
+    <p itemprop="description">Web page, mobile app and social media design as a service.</p>
     <p>Simple. Fast. Nice.</p>
-    <p style="font-style: normal;">&darr;</p>
+    <p id="arrow">&darr;</p>
   </header>
 
   <main>
 
-    <h1>Made By Vimo</h1>
+    <h2>Made By Vimo</h2>
 
-    <section id="portfolio">
+    <section id="portfolio" itemscope itemtype="https://schema.org/Collection">
 
-      <div class="portfolio-item">
+      <div class="portfolio-item" itemscope itemtype="https://schema.org/WebPage">
         <picture>
           <source srcset="img/eestikirik.webp" type="image/webp">
           <source srcset="img/eestikirik.png" type="image/png">
-          <img src="img/eestikirik.png" width="400" height="300" alt="Preview of Eesti Kirik">
+          <img itemprop="image" src="img/eestikirik.png" width="400" height="300" alt="Preview of Eesti Kirik">
         </picture>
-        <h2>Eesti Kirik</h2>
-        <p class="url"><a href="https://eestikirik.ee/" title="Eesti kirik" hreflang="et">eestikirik.ee</a>
+        <h3 itemprop="name">Eesti Kirik</h3>
+        <p class="url"><a itemprop="significantLink" href="https://eestikirik.ee/" title="Eesti kirik"
+            hreflang="et">eestikirik.ee</a>
         </p>
-        <p>Big project. Tight collaboration with a client. Integration with the Stripe payment system. Design, code and
+        <p itemprop="abstract">Big project. Tight collaboration with a client. Integration with the Stripe payment
+          system. Design, code and
           custom solutions are keywords here.</p>
-        <p class="tags">wordpress | design | stripe</p>
+        <p itemprop="keywords" class="tags">wordpress | design | stripe</p>
       </div>
 
-      <div class="portfolio-item">
+      <div class="portfolio-item" itemscope itemtype="https://schema.org/WebPage">
         <picture>
           <source srcset="img/kvissentalihoov.webp" type="image/webp">
           <source srcset="img/kvissentalihoov.png" type="image/png">
-          <img src="img/kvissentalihoov.png" width="400" height="300" alt="Preview of Kvissentali hoovimüük">
+          <img itemprop="image" src="img/kvissentalihoov.png" width="400" height="300"
+            alt="Preview of Kvissentali hoovimüük">
         </picture>
-        <h2>Kvissentali Hoovimüük</h2>
-        <p class="url"><a href="https://kvissentalihoov.ee/" title="Kvissentali hoovimüük"
+        <h3 itemprop="name">Kvissentali Hoovimüük</h3>
+        <p class="url"><a itemprop="significantLink" href="https://kvissentalihoov.ee/" title="Kvissentali hoovimüük"
             hreflang="et">kvissentalihoov.ee</a></p>
-        <p>Landing web page for local community about day of backyard sale. Quick information and festive mood - all you
+        <p itemprop="abstract">Landing web page for local community about day of backyard sale. Quick information and
+          festive mood - all you
           need for a good day!</p>
-        <p class="tags">layout | content | responsiveness</p>
+        <p itemprop="keywords" class="tags">layout | content | responsiveness</p>
       </div>
 
-      <div class="portfolio-item">
+      <div class="portfolio-item" itemscope itemtype="https://schema.org/WebPage">
         <picture>
           <source srcset="img/spiralwood.webp" type="image/webp">
           <source srcset="img/spiralwood.png" type="image/png">
-          <img src="img/spiralwood.png" width="400" height="300" alt="Preview of Spiral Wood Music">
+          <img itemprop="image" src="img/spiralwood.png" width="400" height="300" alt="Preview of Spiral Wood Music">
         </picture>
-        <h2>Spiral Wood Music</h2>
-        <p class="url"><a href="https://spiralwood.art/" title="Spiral Wood Music" hreflang="en">spiralwood.art</a></p>
-        <p>Ambient web page for ambient musician. Listen, dive and experience!</p>
-        <p class="tags">design | pictures | responsiveness</p>
+        <h3 itemprop="name">Spiral Wood Music</h3>
+        <p class="url"><a itemprop="significantLink" href="https://spiralwood.art/" title="Spiral Wood Music"
+            hreflang="en">spiralwood.art</a></p>
+        <p itemprop="abstract">Ambient web page for ambient musician. Listen, dive and experience!</p>
+        <p itemprop="keywords" class="tags">design | pictures | responsiveness</p>
       </div>
 
-      <div class="portfolio-item">
+      <div class="portfolio-item" itemscope itemtype="https://schema.org/WebPage">
         <picture>
           <source srcset="img/kvissentalikodukohvikud.webp" type="image/webp">
           <source srcset="img/kvissentalikodukohvikud.png" type="image/png">
-          <img src="img/kvissentalikodukohvikud.png" width="400" height="300" loading="lazy"
+          <img itemprop="image" src="img/kvissentalikodukohvikud.png" width="400" height="300" loading="lazy"
             alt="Preview of Kvissentali Kodukohvikud">
         </picture>
-        <h2>Kvissentali Kodukohvikud</h2>
-        <p class="url"><a href="https://kvissentalikodukohvikud.ee/" title="Kvissentali Kodukohvikud"
-            hreflang="et">kvissentalikodukohvikud.ee</a></p>
-        <p>Simple web page for local community about day of home cafes. Authentic design, responsiveness and
+        <h3 itemprop="name">Kvissentali Kodukohvikud</h3>
+        <p class="url"><a itemprop="significantLink" href="https://kvissentalikodukohvikud.ee/"
+            title="Kvissentali Kodukohvikud" hreflang="et">kvissentalikodukohvikud.ee</a></p>
+        <p itemprop="abstract">Simple web page for local community about day of home cafes. Authentic design,
+          responsiveness and
           accessibility
           are the thing here.</p>
-        <p class="tags">design | content | responsiveness</p>
+        <p itemprop="keywords" class="tags">design | content | responsiveness</p>
       </div>
 
-      <div class="portfolio-item">
+      <div class="portfolio-item" itemscope itemtype="https://schema.org/WebPage">
         <picture>
           <source srcset="img/sleepconsult.webp" type="image/webp">
           <source srcset="img/sleepconsult.png" type="image/png">
-          <img src="img/sleepconsult.png" width="400" height="300" loading="lazy" alt="Preview of Sleep Consult">
+          <img itemprop="image" src="img/sleepconsult.png" width="400" height="300" loading="lazy"
+            alt="Preview of Sleep Consult">
         </picture>
-        <h2>Sleep Consult</h2>
-        <p class="url"><a href="https://sleepconsult.eu" title="Sleep Consult" hreflang="ru">sleepconsult.eu</a></p>
-        <p>Landing web page and blog made on Jekyll. Responsive design and accessibility rules are implemented.</p>
-        <p class="tags">jekyll | responsive design</p>
+        <h3 itemprop="name">Sleep Consult</h3>
+        <p class="url"><a itemprop="significantLink" href="https://sleepconsult.eu" title="Sleep Consult"
+            hreflang="ru">sleepconsult.eu</a></p>
+        <p itemprop="abstract">Landing web page and blog made on Jekyll. Responsive design and accessibility rules are
+          implemented.</p>
+        <p itemprop="keywords" class="tags">jekyll | responsive design</p>
       </div>
 
-      <div class="portfolio-item">
+      <div class="portfolio-item" itemscope itemtype="https://schema.org/WebPage">
         <picture>
           <source srcset="img/riigipyhad.webp" type="image/webp">
           <source srcset="img/riigipyhad.png" type="image/png">
-          <img src="img/riigipyhad.png" width="400" height="300" loading="lazy" alt="Preview of Riigipühad">
+          <img itemprop="image" src="img/riigipyhad.png" width="400" height="300" loading="lazy"
+            alt="Preview of Riigipühad">
         </picture>
-        <h2>Riigipühad</h2>
-        <p class="url"><a href="https://vimo.ee/riigipyhad" title="Riigipühad App" hreflang="en">vimo.ee/riigipyhad</a>
+        <h3 itemprop="name">Riigipühad</h3>
+        <p class="url"><a itemprop="significantLink" href="https://vimo.ee/riigipyhad" title="Riigipühad App"
+            hreflang="en">vimo.ee/riigipyhad</a>
         </p>
-        <p>Android app made on Flutter, that sends notifications about Estonian public holidays, flag days and short
+        <p itemprop="abstract">Android app made on Flutter, that sends notifications about Estonian public holidays,
+          flag days and short
           workdays.</p>
-        <p class="tags">flutter | android</p>
+        <p itemprop="keywords" class="tags">flutter | android</p>
       </div>
 
     </section>
 
-    <h1>People</h1>
+    <h2>People</h2>
 
     <section id="people">
 
-      <div class="person">
+      <div class="person" itemscope itemtype="https://schema.org/Person">
         <picture>
           <source srcset="img/irina.webp" type="image/webp">
           <source srcset="img/irina.png" type="image/png">
-          <img src="img/irina.png" width="300" height="300" loading="lazy" alt="Irina Ivanova">
+          <img itemprop="image" src="img/irina.png" width="300" height="300" loading="lazy" alt="Irina Ivanova">
         </picture>
-        <h2>Irina Ivanova</h2>
-        <p class="url"><a href="mailto:irina.ivanova@protonmail.com"
+        <h3 itemprop="name">Irina Ivanova</h3>
+        <p itemprop="email" class="url"><a href="mailto:irina.ivanova@protonmail.com"
             title="irina.ivanova@protonmail.com">irina.ivanova@protonmail.com</a></p>
         <p class="tags url">
-          <a href="linkedin.com/in/irina-ivanova-660347221" title="LinkedIn: irina-ivanova-660347221"
-            hreflang="en">LinkedIn</a> |
-          <a href="https://github.com/iriiiina" title="GitHub: iriiiina" hreflang="en">GitHub</a> |
-          <a href="https://it.irina-ivanova.eu" title="Website: it.irina-ivanova.eu" hreflang="en">Website</a>
+          <a itemprop="sameAs" href="https://www.linkedin.com/in/irina-ivanova-660347221/"
+            title="LinkedIn: irina-ivanova-660347221" hreflang="en">LinkedIn</a> |
+          <a itemprop="sameAs" href="https://github.com/iriiiina" title="GitHub: iriiiina" hreflang="en">GitHub</a> |
+          <a itemprop="url" href="https://it.irina-ivanova.eu" title="Website: it.irina-ivanova.eu"
+            hreflang="en">Website</a>
         </p>
       </div>
 
-      <div class="person">
+      <div class="person" itemscope itemtype="https://schema.org/Person">
         <picture>
           <source srcset="img/nikita.webp" type="image/webp">
           <source srcset="img/nikita.png" type="image/png">
-          <img src="img/nikita.png" width="300" height="300" loading="lazy" alt="Nikita Ivanov">
+          <img itemprop="image" src="img/nikita.png" width="300" height="300" loading="lazy" alt="Nikita Ivanov">
         </picture>
-        <h2>Nikita Ivanov</h2>
-        <p class="url"><a href="mailto:nikita.ivanov@protonmail.com"
+        <h3 itemprop="name">Nikita Ivanov</h3>
+        <p itemprop="email" class="url"><a href="mailto:nikita.ivanov@protonmail.com"
             title="nikita.ivanov@protonmail.com">nikita.ivanov@protonmail.com</a></p>
         <p class="tags url">
-          <a href="https://www.linkedin.com/in/nikita-ivanov/" title="LinkedIn: nikita-ivanov"
-            hreflang="en">LinkedIn</a> |
-          <a href="https://github.com/gregorianisch" title="GitHub: gregorianisch" hreflang="en">GitHub</a>
+          <a itemprop="sameAs" href="https://www.linkedin.com/in/nikita-ivanov/" title="LinkedIn: nikita-ivanov"
+            hreflang="en">LinkedIn</a>
+          |
+          <a itemprop="sameAs" href="https://github.com/gregorianisch" title="GitHub: gregorianisch"
+            hreflang="en">GitHub</a>
         </p>
       </div>
 
@@ -179,21 +198,21 @@
 
   </main>
 
-  <footer>
-    <p>Vimo OÜ</p>
+  <footer itemscope itemtype="https://schema.org/LocalBusiness">
+    <p itemprop="name">Vimo OÜ</p>
     <p>Reg. code 16788834</p>
-    <p>Klaose 4-2, 51017 Tartu, Estonia</p>
-    <p><a href="mailto:irina.ivanova@protonmail.com"
+    <p itemprop="address">Klaose 4-2, 51017 Tartu, Estonia</p>
+    <p itemprop="email"><a href="mailto:irina.ivanova@protonmail.com"
         title="irina.ivanova@protonmail.com">irina.ivanova@protonmail.com</a></p>
-    <a class="social-icon" href="https://www.instagram.com/vimo.ee" aria-label="Аккаунт Инстаграма @vimo.ee"
-      title="@vimo.ee">
+    <a itemprop="sameAs" class="social-icon" href="https://www.instagram.com/vimo.ee"
+      aria-label="Instagram Account @vimo.ee" title="@vimo.ee" hreflang="en">
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
       </svg>
     </a>
-    <a class="social-icon" href="https://www.facebook.com/vimo.ee" aria-label="Аккаунт Фейсбука @vimo.ee"
-      title="@vimo.ee">
+    <a itemprop="sameAs" class="social-icon" href="https://www.facebook.com/vimo.ee"
+      aria-label="Facebook Account @vimo.ee" title="@vimo.ee" hreflang="en">
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z" />

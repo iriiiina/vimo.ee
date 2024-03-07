@@ -42,9 +42,13 @@ header img {
     }
 }
 
+#arrow {
+    font-style: normal;
+}
+
 /* MAIN */
 
-h1 {
+h2 {
     text-align: center;
     color: white;
     font-style: italic;
@@ -53,7 +57,7 @@ h1 {
     margin-top: 2em;
 }
 
-h2 {
+h3 {
     text-align: center;
     color: #34495e;
 }
