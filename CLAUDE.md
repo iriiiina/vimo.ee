@@ -17,9 +17,17 @@ Static HTML/CSS landing page for [vimo.ee](https://vimo.ee), served by GitHub Pa
 
 The HTML is hand-tuned for SEO and schema.org structured data — these are the primary reason for most recent commits. When editing `index.html`:
 
-- Preserve `itemscope` / `itemtype` / `itemprop` attributes. The body is a `WebPage`, `#portfolio` is a `Collection` of `WebPage`s, `#people` contains `Person`s, the footer is a `LocalBusiness` with a nested `PostalAddress`.
+- Preserve `itemscope` / `itemtype` / `itemprop` attributes. The body is a `WebPage`, `#portfolio` is a `Collection` of `WebPage`s, `#people` contains `Person`s, the footer is a `LocalBusiness` with a nested `PostalAddress`. A JSON-LD `@graph` in `<head>` mirrors the `LocalBusiness` + `WebSite` for richer local-search results — it complements, it does not replace, the microdata.
 - Validate changes at <https://validator.schema.org/> (schema) and <https://konversioon.ee/> (SEO) before considering a change done — this is the established workflow per README.
-- Keep meta tags (`description`, `og:*`, `canonical`) in sync when titles or descriptions change.
+- Keep meta tags (`description`, `og:*`, `twitter:*`, `canonical`) **and** the JSON-LD block in sync when titles, descriptions, or business details change.
+
+## Accessibility, SEO, and performance are first-class concerns
+
+Every HTML/CSS edit can affect all three. When asked "any improvements?" — or even when not asked but the change touches the surrounding area — scan for concrete issues across all of these, not just the dimension the user named. Patterns this codebase already uses, and should keep using:
+
+- **Accessibility:** mark decorative content with `aria-hidden="true"` (the `↓` arrow, icon SVGs whose parent `<a>` already has `aria-label`); give every landmark `<section>` an accessible name via `aria-labelledby="<heading-id>"`; keep exactly one `<h1>`; every `:hover` color rule should have a matching `:focus-visible`.
+- **SEO:** meta description ~150–160 chars, with location and concrete services; use **absolute URLs** in `og:*` / `twitter:*` / JSON-LD (relative paths break on social scrapers); keep `canonical`, `og:url`, sitemap entries, and internal links consistent on trailing slashes; include `og:image:alt` and a `summary_large_image` Twitter Card.
+- **Performance:** above-the-fold images (header logo, first portfolio item) must **not** have `loading="lazy"` — it delays LCP. Every `<img>` keeps explicit `width`/`height` to prevent CLS. Every photo ships `.webp` + `.png`/`.jpeg` fallback via `<picture>`.
 
 ## Workflow
 

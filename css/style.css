@@ -42,6 +42,12 @@ header img {
     }
 }
 
+header h1 {
+    font-size: 1em;
+    font-weight: normal;
+    margin: 1em 0;
+}
+
 #arrow {
     font-style: normal;
 }
@@ -131,7 +137,8 @@ section {
         margin: 20px;
     }
 
-    .url a:hover {
+    .url a:hover,
+    .url a:focus-visible {
         color: #16a085;
     }
 
@@ -164,11 +171,13 @@ footer a {
 }
 
 @media screen and (min-width:880px) {
-    footer a:hover {
+    footer a:hover,
+    footer a:focus-visible {
         color: #16a085;
     }
 
-    .social-icon svg:hover {
+    .social-icon svg:hover,
+    .social-icon:focus-visible svg {
         fill: #16a085;
     }
 }
